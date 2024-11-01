@@ -1,0 +1,309 @@
+{
+    "logo": "/images/logo.png",
+    "address": { "state":"Tbilisi, Georgia", "street": "142 Grigol Lortkipanidze St." },
+    "contactNumber": [
+      {"id":1, "language": "(Georgian Speaking)", "phone": "+995 598 011 000"},
+      {"id":2, "language": "(English Speaking)", "phone": "+995 591 644 666"}
+    ],
+    "emails": {"email1": "info@teromix.ge", "email2": "marketing@teromix.ge"},
+    "homebackphoto":"/images/homeBack.png",
+    "about" :[
+      {
+        "title": "About Us",
+        "background1":"/images/aboutback1.jpg",
+        "background2":"/images/aboutback2.jpg",
+        "section1": {
+          "title":"Who We Are",
+          "description": "TEROMIX has established itself as one of the top fit-out companies in Georgia, providing 'TOTAL INTERIOR SOLUTIONS', consistent with the highest standards of quality and services since its inception in 2020. More focused on the team during the last 20 years were in other countries (UAE, Iran, and Iraq), Driven by the core values of teamwork and process ownership on an individual level, with highly qualified and dedicated employees.  Guided by the company's core value of delivering excellence, we provide a comprehensive range of services such as fit-out contracting, manufacturing, detail design and build, and project management. Teramix was incorporated with the vision of becoming the regional benchmark for quality finishes. It continues to be recognized as one of the best providers of high-end bespoke joinery, fit-out, and mill works.",
+          "photo": "/images/aboutphoto1.jpg"
+        },
+        "section2": {
+          "title":"Why Us",
+          "description": "In Teromix, we don't just implement designs; we bring your vision to reality with expertise and precision. Here's what makes us stand out: The Fit-Out Construction Process: From planning to the final touches, we manage every detail to ensure a smooth and efficient project. Different Types of Fit-Outs: Whether it's a basic Category A fit-out or a customized Category B fit-out, we deliver tailored solutions that match your specific needs. Project Management: We keep everything on track, from timelines to budgets, ensuring seamless coordination between suppliers and contractors for timely project completion. Customization and Flexibility: We adapt to your requirements, offering personalized solutions, whether it's a quick turnaround or specific materials. In every project, our goal is to find practical, uncomplicated solutions that save time and reduce costs without compromising on excellence ",
+          "photo": "/images/aboutphoto2.jpg"
+        },
+        "section3": {
+          "title": "What We Do In Teromix",
+          "cards":[
+            {
+              "id":1, 
+              "title": "CONSULTING",
+              "description": "Our all-inclusive approach begins by understanding what your organization and your designer need from the project. We try to improve technical designs and detailing by consulting with designers and clients in proper way.",
+              "photo": "/images/whatwedo1.jpg"
+            },
+            {
+              "id":2, 
+              "title": "CONTRACTING",
+              "description": "Our contracting services cover all aspects of interior, fit out in coordination with all requirments of site conditions. We are ready to be part of the projects in most functions in Hospitality, Retails, Offices, Bespoke furnitures as a fit-out contractor and manager.",
+              "photo": "/images/whatwedo2.jpg"
+            },
+            {
+              "id":3, 
+              "title": "PROJECT DELIVERY",
+              "description": "Our full bodied approach leaves nothing to chance in bringing projects to fruition.The quality is the first proirity which will happen by experince and full coordination with designer and client teams.",
+              "photo": "/images/whatwedo3.jpg"
+            }
+          ]
+        }
+      }
+    ],
+    "projects": {
+      "title": "PROJECTS",
+      "background":"/images/projectback.jpg",
+      "cards":[
+        {
+          "id":1,
+          "category":"Office",
+          "client": "SBID / Emirate national ivestment",
+          "location": "DUBAI, UAE",
+          "date":"2018",
+          "size": "2800 Sq.m",
+          "photos": [
+            "/images/project1-1.jpg",
+            "/images/project1-2.jpg",
+            "/images/project1-3.jpg",
+            "/images/project1-4.jpg",
+            "/images/project1-5.jpg"
+          ]
+        },
+        {
+          "id":2,
+          "category":"Office",
+          "client": "SBID / Interior design Bussiness Center office",
+          "location": "DUBAI, UAE",
+          "date":"2020",
+          "size": "1200 Sq.m",
+          "photos": [
+            "/images/project2-1.jpg",
+            "/images/project2-2.jpg",
+            "/images/project2-3.jpg",
+            "/images/project2-4.jpg",
+            "/images/project2-5.jpg"
+          ]
+        },
+        {
+          "id":3,
+          "category":"Office",
+          "client": "Mofid retreat and sales office",
+          "location": "TEHRAN, IRAN",
+          "date":"2022",
+          "size": "1400 Sq.m",
+          "photos": [
+            "/images/project3-1.jpg",
+            "/images/project3-2.jpg",
+            "/images/project3-3.jpg",
+            "/images/project3-4.jpg",
+            "/images/project3-5.jpg",
+            "/images/project3-6.jpg"
+          ]
+        },
+        {
+          "id":4,
+          "category":"Office",
+          "client": "Rafmoh Holding office",
+          "location": "DUBAI, UAE",
+          "date":"2017",
+          "size": "1750 Sq.m",
+          "photos": [
+            "/images/project4-1.jpg",
+            "/images/project4-2.jpg",
+            "/images/project4-3.jpg",
+            "/images/project4-4.jpg"
+          ]
+        },
+        {
+          "id":5,
+          "category":"Office",
+          "client": "SBID /TECOM KP",
+          "location": "DUBAI, UAE",
+          "date":"2017",
+          "size": "5900 Sq.m",
+          "photos": [
+            "/images/project5-1.jpg",
+            "/images/project5-2.jpg",
+            "/images/project5-3.jpg",
+            "/images/project5-4.jpg"
+          ]
+        },
+        {
+          "id":6,
+          "category":"retail",
+          "client": "Roya Gallery",
+          "location": "DUBAI, UAE",
+          "date":"2015",
+          "size": "800 Sq.m",
+          "photos": [
+            "/images/project6-1.jpg",
+            "/images/project6-2.jpg",
+            "/images/project6-3.jpg",
+            "/images/project6-4.jpg",
+            "/images/project6-5.jpg"
+          ]
+        },
+        {
+          "id":7,
+          "category":"retail",
+          "client": "Bell Center",
+          "location": "TEHRAN, IRAN",
+          "date":"2015",
+          "size": "1000 Sq.m",
+          "photos": [
+            "/images/project7-1.jpg",
+            "/images/project7-2.jpg",
+            "/images/project7-3.jpg",
+            "/images/project7-4.jpg"
+          ]
+        },
+        {
+          "id":8,
+          "category":"retail",
+          "client": "CYAN / SAMSUNG CHAIL",
+          "location": "TEHRAN, IRAN",
+          "date":"2016",
+          "size": "1200 Sq.m",
+          "photos": [
+            "/images/project8-1.jpg",
+            "/images/project8-2.jpg",
+            "/images/project8-3.jpg",
+            "/images/project8-4.jpg"
+          ]
+        },
+        {
+          "id":9,
+          "category":"retail",
+          "client": "SBID / SHIMA Resaurant",
+          "location": "DUBAI, UAE",
+          "date":"2021",
+          "size": "900 Sq.m",
+          "photos": [
+            "/images/project9-1.jpg",
+            "/images/project9-2.jpg",
+            "/images/project9-3.jpg",
+            "/images/project9-4.jpg"
+          ]
+        },
+        {
+          "id":10,
+          "category":"hotel",
+          "client": "ROSE Hotel",
+          "location": "DUBAI, UAE",
+          "date":"2018",
+          "size": "600 Sq.m",
+          "photos": [
+            "/images/project10-1.jpg",
+            "/images/project10-2.jpg",
+            "/images/project10-3.jpg",
+            "/images/project10-4.jpg"
+          ]
+        },
+        {
+          "id":11,
+          "category":"hotel",
+          "client": "H&H",
+          "location": "KUWAIT",
+          "date":"2016",
+          "size": "3000 Sq.m",
+          "photos": [
+            "/images/project11-1.jpg",
+            "/images/project11-2.jpg",
+            "/images/project11-3.jpg",
+            "/images/project11-4.jpg"
+          ]
+        },
+        {
+          "id":12,
+          "category":"residental",
+          "client": "PRIVATE RESIDENTIALS",
+          "location": "TEHRAN And DUBAI",
+          "date":"Since 2016",
+          "size": "-- Sq.m",
+          "photos": [
+            "/images/project12-1.jpg",
+            "/images/project12-2.jpg",
+            "/images/project12-3.jpg",
+            "/images/project12-4.jpg"
+          ]
+        }
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "background": "/images/serviceback.jpg",
+      "description": "As a complete interior general contractor, teromix's project managers can manage your project from the initial design phases through to handover and completion. Our construction and execution teams will coordinate all elements of the project to ensure the project is delivered on time, within budget and in accordance with your approved design.",
+      "cards":[
+        {  "title": "RESIDENTIAL", "photo":"/images/service1.jpg" },
+        {  "title": "OFFICE", "photo":"/images/service2.jpg" },
+        {  "title": "RETAIL", "photo":"/images/service3.jpg" },
+        {  "title": "HOTEL", "photo":"/images/service4.jpg" },
+        {  "title": "INTERIOR PRODUCTS", "photo":"/images/service5.jpg" },
+        {  "title": "ART WORKS", "photo":"/images/service6.jpg" }
+      ]
+    },
+    "partners": {
+      "title": "Our Partners",
+      "background": "/images/partnerback.jpg",
+      "cards": [
+        {
+          "name": "Doors and Special Millworks ",
+          "description": "Security Doors Component",
+          "material": "Natural Oak Veneer",
+          "photos":[
+            "/images/doors1.jpg",
+            "/images/doors2.jpg"
+          ]
+        },
+        {
+          "name": "Doors and Special Millworks ",
+          "description": "Security Doors Component",
+          "material": "Natural Veneer",
+          "photos":[
+            "/images/doors3.jpg",
+            "/images/doors4.jpg"
+          ]
+        },
+        {
+          "name": "Doors and Special Millworks ",
+          "description": "Security Doors Component",
+          "material": "Natural Walnut Veneer",
+          "photos":[
+            "/images/doors5.jpg",
+            "/images/doors6.jpg"
+          ]
+        },
+        {
+          "name": "Doors and Special Millworks ",
+          "description": "Frame Profiles",
+          "material": "Natural Walnut Veneer",
+          "photos":[
+            "/images/frame1.jpg",
+            "/images/frame2.jpg",
+            "/images/frame3.jpg"
+          ]
+        },
+        {
+          "name": " LAMINATED MESH & FABRIC WITH GLASS ",
+          "description": "Easy to clean and maintenance .different designs with fabric and metal mesh. suitable for doors, partitions and designer tastes.",
+          "material": "Glass & Fabric",
+          "photos":[
+            "/images/glass1.jpg",
+            "/images/glass2.jpg",
+            "/images/glass3.jpg",
+            "/images/glass4.jpg",
+            "/images/glass5.jpg",
+            "/images/glass6.jpg"
+          ]
+        },
+        {
+          "name": "Plexiglass Laminated MDF ",
+          "description": "Plexiglas laminated MDF combines the strength of Medium Density Fiberboard with a sleek, high-gloss Plexiglas finish. It is durable, scratch-resistant, and ideal for modern furniture, cabinets, and interior panels.",
+          "material": "MDF & Plexiglas",
+          "photos":[
+            "/images/plexi1.jpg",
+            "/images/plexi2.jpg",
+            "/images/plexi3.jpg"
+          ]
+        }
+      ]
+    }
+  }
+  
