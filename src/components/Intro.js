@@ -25,18 +25,36 @@ const Intro = () => {
     // Key press handler for "Enter"
     const handleKeyPress = (e) => {
       if (e.key === 'Enter') {
-        gsap.to('.intro', {
-          duration: 1,
-          x: '-100%',
-          onComplete: () => navigate('/home'),
-        });
+        navigateToHome();
       }
+    };
+
+    // Function to navigate to home
+    const navigateToHome = () => {
+      gsap.to('.intro', {
+        duration: 1,
+        x: '-100%',
+        onComplete: () => navigate('/home'),
+      });
     };
 
     window.addEventListener('keydown', handleKeyPress);
 
+    // Click handler for mobile devices
+    const handleClick = () => {
+      navigateToHome();
+    };
+
+    const pressEnterElement = document.querySelector('.press-enter');
+    if (pressEnterElement) {
+      pressEnterElement.addEventListener('click', handleClick);
+    }
+
     return () => {
       window.removeEventListener('keydown', handleKeyPress);
+      if (pressEnterElement) {
+        pressEnterElement.removeEventListener('click', handleClick);
+      }
     };
   }, [data, navigate]); // Added data to dependency array
 
@@ -53,10 +71,10 @@ const Intro = () => {
       />
       {/* Thank You Text */}
       <p className="text-message text-color1 opacity-0 mt-5 text-2xl sm:text-3xl md:text-4xl">
-         TOTAL INTERIOR SOLUTIONS
+        TOTAL INTERIOR SOLUTIONS
       </p>
       {/* Press Enter Text */}
-      <p className="press-enter text-color2 opacity-0 mt-10 text-lg sm:text-xl md:text-2xl">
+      <p className="press-enter text-color2 opacity-0 mt-10 text-lg sm:text-xl md:text-2xl cursor-pointer">
         Press Enter
       </p>
     </div>
