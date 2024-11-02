@@ -18,7 +18,7 @@ const ProjectCarousel = ({ projects }) => {
         {projects.cards.map((project) => (
           <div key={project.id} className="relative w-full h-[400px] p-2 mb-10">
             <img
-              src={project.photos[1]} // Display the first photo from the array
+              src={project.photos[0]} // Display the first photo from the array
               alt={project.client}
               className="w-full h-full object-cover rounded-sm"
             />
