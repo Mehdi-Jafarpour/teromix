@@ -35,13 +35,13 @@ const Footer = () => {
 
     
             <div className="flex justify-center sm:justify-end space-x-4 mb-4 md:mb-0">
-              <a href="#" className="text-gray-800 hover:text-color1">
+              <a href="https://www.facebook.com/teromix?mibextid=LQQJ4d" target="_blank" className="text-gray-800 hover:text-color1">
                 <FaFacebook size={20} />
               </a>
-              <a href="#" className="text-gray-800 hover:text-color1">
+              <a href="https://www.instagram.com/teromix.ge?igsh=MTAxZWZ5a3A1djQ5dg==" target="_blank" className="text-gray-800 hover:text-color1">
                 <FaInstagram size={20} />
               </a>
-              <a href="#" className="text-gray-800 hover:text-color1">
+              <a href="https://wa.me/995591644666" target="_blank" className="text-gray-800 hover:text-color1">
                 <FaWhatsapp size={20} />
               </a>
             </div>
