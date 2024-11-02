@@ -1,6 +1,7 @@
 import { useData } from '../context/DataContext';
 import { IoIosArrowForward } from "react-icons/io";
 import ProjectCarousel from './ProjetCarousel';
+import PartnerCarousel from './PartnerCarousel'
 
 function Home() {
   const data = useData();
@@ -118,10 +119,7 @@ function Home() {
     </section>
 
       {/* Partners Slider Section */}
-      <section id="partners-slider">
-        {/* We'll add more details here later */}
-        <h2>Our Partners</h2>
-      </section>
+      <PartnerCarousel partners={data.partners}/>
     </div>
   );
 }
