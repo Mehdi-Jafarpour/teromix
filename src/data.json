@@ -7,6 +7,7 @@
     ],
     "emails": {"email1": "info@teromix.ge", "email2": "marketing@teromix.ge"},
     "homebackphoto":"/images/homeBack.jpg",
+    "introback": "/images/introBack.png",
     "about" :[
       {
         "title": "About Us",
