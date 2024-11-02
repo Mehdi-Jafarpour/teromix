@@ -77,7 +77,7 @@ function Home() {
       {/* Our Services Section */}
       <section className="py-10 my-10 p-20 flex flex-col items-center justify-center" style={{"backgroundColor": "#F5F5F5"}}>
       <h2 className="text-center text-2xl font-bold mb-4">{data?.services.title}</h2>
-      <p className="text-center text-gray-600 mb-8 ">{data?.services.description.slice(0, 150) + '...'}</p>
+      <p className="text-center text-gray-600 mb-8 ">{data?.services.description.slice(0, 161) + '...'}</p>
 
       <div className="flex flex-col items-center gap-6 md:flex-row md:justify-center md:gap-10 mt-10">
         {/* Service 1 */}
