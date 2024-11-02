@@ -30,7 +30,7 @@ function Home() {
           href="https://online.flippingbook.com/view/316928134/?_gl=1*6z2fsu*_gcl_au*MTg0NDQyMTI3MC4xNzI5ODI3MzIx"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-center px-3 py-1  border border-black text-black rounded-md hover:bg-color2 hover:text-color1 transition min-w-[80px] sm:min-w-[90px] md:min-w-[200px]"
+          className="text-center px-3 py-1  border border-color1 text-white rounded-sm hover:bg-black hover:text-color1 transition min-w-[80px] sm:min-w-[90px] md:min-w-[200px]"
           style={{ borderRadius: '2px' }}
         >
           Teromix Profile 
