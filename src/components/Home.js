@@ -14,14 +14,14 @@ function Home() {
     <div>
       {/* Hero Section */}
       <section
-        className="relative h-[50vh] lg:h-[120vh] bg-cover bg-center flex flex-col justify-start items-center"
+        className="relative h-[50vh] lg:h-[120vh] bg-cover bg-center flex flex-col justify-cstart items-center"
         style={{ backgroundImage: `url(${data.homebackphoto})`, paddingTop: '15vh' }}
       >
         {/* Logo */}
         <img
           src={data.logo}
           alt="Logo"
-          className="w-[200px] sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[700px] mb-4 sm:mb-6 md:mb-8" 
+          className="w-[200px] sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[700px]" 
           
         />
 
@@ -30,7 +30,7 @@ function Home() {
           href="https://online.flippingbook.com/view/316928134/?_gl=1*6z2fsu*_gcl_au*MTg0NDQyMTI3MC4xNzI5ODI3MzIx"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-center px-3 py-1 sm:px-4 sm:py-2 md:px-5 md:py-2.5 border border-black text-black rounded-md hover:bg-color2 hover:text-color1 transition min-w-[80px] sm:min-w-[90px] md:min-w-[200px]"
+          className="text-center px-3 py-1  border border-black text-black rounded-md hover:bg-color2 hover:text-color1 transition min-w-[80px] sm:min-w-[90px] md:min-w-[200px]"
           style={{ borderRadius: '2px' }}
         >
           Teromix Profile 
