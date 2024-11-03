@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -13,6 +12,17 @@ import Intro from './components/Intro';
 function App() {
   return (
     <Router>
+      <Main />
+    </Router>
+  );
+}
+
+// Create a Main component to handle the routing and footer logic
+function Main() {
+  const location = useLocation();
+
+  return (
+    <>
       <Header />
       <Routes>
         <Route path="/" exact element={<Intro />} />
@@ -23,8 +33,8 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {window.location.pathname !== '/' && <Footer />}
-    </Router>
+      {location.pathname !== '/' && <Footer />}
+    </>
   );
 }
 
