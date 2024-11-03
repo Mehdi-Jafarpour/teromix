@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -10,19 +11,25 @@ import Partners from './components/Partners';
 import Intro from './components/Intro';
 
 function App() {
+  const [showFooter, setShowFooter] = useState(false);
+
+  const handleIntroComplete = () => {
+    setShowFooter(true);
+  };
+
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" exact element={<Intro />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Intro onComplete={handleIntroComplete} />} />
+        <Route path="/home" element={<Home onComplete={handleIntroComplete} />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
+      {showFooter && <Footer />}
     </Router>
   );
 }
