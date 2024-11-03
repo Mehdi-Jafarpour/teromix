@@ -23,7 +23,6 @@ const Intro = () => {
 
     // Video end event handler
     const handleVideoEnd = () => {
-      // Start the animation sequence when the video ends
       tl.play();
     };
 
@@ -32,6 +31,7 @@ const Intro = () => {
       if (e.key === 'Enter') {
         navigateToHome();
       }
+      
     };
 
     // Function to navigate to home
@@ -41,6 +41,7 @@ const Intro = () => {
         x: '-100%',
         onComplete: () => navigate('/home'),
       });
+     
     };
 
     window.addEventListener('keydown', handleKeyPress);
@@ -48,6 +49,7 @@ const Intro = () => {
     // Click handler for mobile devices
     const handleClick = () => {
       navigateToHome();
+    
     };
 
     const pressEnterElement = document.querySelector('.press-enter');

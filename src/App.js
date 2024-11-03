@@ -11,25 +11,19 @@ import Partners from './components/Partners';
 import Intro from './components/Intro';
 
 function App() {
-  const [showFooter, setShowFooter] = useState(false);
-
-  const handleIntroComplete = () => {
-    setShowFooter(true);
-  };
-
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Intro onComplete={handleIntroComplete} />} />
-        <Route path="/home" element={<Home onComplete={handleIntroComplete} />} />
+        <Route path="/" exact element={<Intro />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {showFooter && <Footer />}
+      {window.location.pathname !== '/' && <Footer />}
     </Router>
   );
 }
