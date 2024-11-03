@@ -2,6 +2,7 @@ import { useData } from '../context/DataContext';
 import { IoIosArrowForward } from "react-icons/io";
 import ProjectCarousel from './ProjetCarousel';
 import PartnerCarousel from './PartnerCarousel'
+import Hero from './Hero';
 
 function Home() {
   const data = useData();
@@ -13,30 +14,7 @@ function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section
-        className="relative h-[50vh] lg:h-[120vh] bg-cover bg-center flex flex-col justify-cstart items-center"
-        style={{ backgroundImage: `url(${data.homebackphoto})`, paddingTop: '15vh' }}
-      >
-        {/* Logo */}
-        <img
-          src={data.logo}
-          alt="Logo"
-          className="w-[200px] sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[700px]" 
-          
-        />
-
-        {/* Button */}
-        <a
-          href="https://online.flippingbook.com/view/316928134/?_gl=1*6z2fsu*_gcl_au*MTg0NDQyMTI3MC4xNzI5ODI3MzIx"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-center px-3 py-1  border border-color1 text-white rounded-sm hover:bg-black hover:text-color1 transition min-w-[80px] sm:min-w-[90px] md:min-w-[200px]"
-          style={{ borderRadius: '2px' }}
-        >
-          Teromix Profile 
-          
-        </a>
-      </section>
+        <Hero />
 
       {/* About Section */}
       <section className="flex flex-col-reverse md:flex-row items-center py-40 mx-5 sm:mx-20" >
