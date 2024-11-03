@@ -2,13 +2,13 @@ import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import { useData } from '../context/DataContext';
-import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io"; // Import both icons
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io"; 
 
 const Hero = () => {
   const data = useData();
 
   if (!data) {
-    return null; // Return null or a loading indicator if data is not available
+    return null; 
   }
 
   const slideImages = data.hero.map(item => ({
