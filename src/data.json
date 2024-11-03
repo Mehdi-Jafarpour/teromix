@@ -11,19 +11,24 @@
     "introclip": "/images/intro.mp4",
     "hero":[
       {"title":"Tailored Interiors: Joinery Solutions for Visionary Designers.",
-        "photo": "/images/hero1.jpg"
+        "photo": "/images/hero1.jpg",
+        "color": "#d90429"
       },
       {"title":"Crafting Stylish Spaces: Where Design Vision Comes to Life!",
-        "photo": "/images/hero2.jpg"
+        "photo": "/images/hero2.jpg",
+        "color": "#f1faee"
       },
       {"title":"Artistry in Every Detail: Joinery That Transforms Your Designs.",
-        "photo": "/images/hero3.jpg"
+        "photo": "/images/hero3.jpg",
+        "color": "#cad2c5"
       },
       {"title":"From Concept to Creation: Precision Fitouts for Inspired Spaces.",
-        "photo": "/images/hero4.jpg"
+        "photo": "/images/hero4.jpg",
+        "color": "#f1faee"
       },
       {"title":"Creating Harmony in Every Corner: Fitout Solutions that Shine!",
-        "photo": "/images/hero5.jpg"
+        "photo": "/images/hero5.jpg",
+        "color": "#132a13"
       }
     ],
     "about" :[
