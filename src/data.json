@@ -12,11 +12,11 @@
     "hero":[
       {"title":"Tailored Interiors: Joinery Solutions for Visionary Designers.",
         "photo": "/images/hero1.jpg",
-        "color": "#d90429"
+        "color": "#fdc500"
       },
       {"title":"Crafting Stylish Spaces: Where Design Vision Comes to Life!",
         "photo": "/images/hero2.jpg",
-        "color": "#f1faee"
+        "color": "#e9ecef"
       },
       {"title":"Artistry in Every Detail: Joinery That Transforms Your Designs.",
         "photo": "/images/hero3.jpg",
@@ -28,7 +28,7 @@
       },
       {"title":"Creating Harmony in Every Corner: Fitout Solutions that Shine!",
         "photo": "/images/hero5.jpg",
-        "color": "#132a13"
+        "color": "#caf0f8"
       }
     ],
     "about" :[
