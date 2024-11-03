@@ -68,7 +68,7 @@ function Header() {
                 <AiOutlineRight className="ml-1 text-sm" /> 
               </button>
               {showDownloads && (
-                <div className="absolute left-28 w-60 z-50">
+                <div className="absolute left-16 sm:left-28 w-60 z-50">
                   <a 
                     href="https://online.flippingbook.com/view/316928134/?_gl=1*6z2fsu*_gcl_au*MTg0NDQyMTI3MC4xNzI5ODI3MzIx" 
                     target="_blank" 
