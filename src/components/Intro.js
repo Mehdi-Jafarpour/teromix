@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { useNavigate } from 'react-router-dom';
 import { useData } from '../context/DataContext';
@@ -6,21 +6,26 @@ import { useData } from '../context/DataContext';
 const Intro = () => {
   const navigate = useNavigate();
   const data = useData();
-
-  // Debugging: Check if data is available
-  console.log('Data:', data);
+  const videoRef = useRef(null);
 
   useEffect(() => {
     if (!data) return; // Only proceed if data is available
 
-    const tl = gsap.timeline();
+    // GSAP timeline for animations
+    const tl = gsap.timeline({ paused: true });
 
-    // Animation sequence
-    tl.set('.intro', { backgroundColor: 'white' })
-      .to('.logo', { duration: 2, opacity: 1 })
-      .to('.text-message', { duration: 1, opacity: 1, y: -20 }, '+=2')
-      .to('.logo, .text-message', { duration: 1, opacity: 0 }, '+=2')
-      .to('.press-enter', { duration: 1, opacity: 1 });
+    // Animation sequence: Fade in "Press Enter" text at the bottom of the screen
+    tl.fromTo(
+      '.press-enter',
+      { opacity: 0, y: 50 }, // Start position (below)
+      { opacity: 1, y: 0, duration: 1, ease: 'power2.out' } // End position
+    );
+
+    // Video end event handler
+    const handleVideoEnd = () => {
+      // Start the animation sequence when the video ends
+      tl.play();
+    };
 
     // Key press handler for "Enter"
     const handleKeyPress = (e) => {
@@ -50,31 +55,36 @@ const Intro = () => {
       pressEnterElement.addEventListener('click', handleClick);
     }
 
+    // Add event listener for video end
+    if (videoRef.current) {
+      videoRef.current.addEventListener('ended', handleVideoEnd);
+    }
+
     return () => {
       window.removeEventListener('keydown', handleKeyPress);
       if (pressEnterElement) {
         pressEnterElement.removeEventListener('click', handleClick);
       }
+      if (videoRef.current) {
+        videoRef.current.removeEventListener('ended', handleVideoEnd);
+      }
     };
-  }, [data, navigate]); // Added data to dependency array
-
-  // If data is not ready, render a loading indicator
+  }, [data, navigate]); 
   if (!data) return <div>Loading...</div>;
 
   return (
-    <div className="intro fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center">
-      {/* Logo */}
-      <img
-        src={data.logo}
-        alt="Logo"
-        className="logo opacity-0 w-40 sm:w-60 md:w-80 "
-      />
-      {/* Thank You Text */}
-      <p className="text-message text-color1 opacity-0 mt-5 text-2xl sm:text-3xl md:text-4xl">
-        TOTAL INTERIOR SOLUTIONS
-      </p>
-      {/* Press Enter Text */}
-      <p className="press-enter text-color2 opacity-0 mt-10 text-lg sm:text-xl md:text-2xl cursor-pointer">
+    <div className="intro fixed top-0 left-0 w-full h-full bg-white overflow-hidden">
+      
+      <video
+        ref={videoRef}
+        className="absolute top-0 left-0 w-full h-full object-fit lg:object-cover z-0"
+        src={data.introclip}
+        autoPlay
+        muted
+        playsInline
+      ></video>
+
+      <p className="press-enter text-color2 opacity-0 absolute bottom-10 left-1/2 transform -translate-x-1/2 text-lg sm:text-xl md:text-2xl cursor-pointer z-10">
         Press Enter
       </p>
     </div>
