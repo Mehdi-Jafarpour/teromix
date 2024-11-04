@@ -1,0 +1,15 @@
+.my-masonry-grid {
+  display: flex;
+  margin-left: -5px; /* Reduce this value to decrease the horizontal gap */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 5px; /* Reduce this value to decrease the horizontal gap */
+  background-clip: padding-box;
+}
+
+/* Adjust the vertical gap between items */
+.my-masonry-grid_column > div {
+  margin-bottom: 5px; /* Reduce this value to decrease the vertical gap */
+}
