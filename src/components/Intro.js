@@ -87,7 +87,7 @@ const Intro = () => {
       ></video>
 
       <p className="press-enter text-color2 opacity-0 absolute bottom-10 left-1/2 transform -translate-x-1/2 text-lg sm:text-xl md:text-2xl cursor-pointer z-10">
-        Press Enter
+        Enter...
       </p>
     </div>
   );
