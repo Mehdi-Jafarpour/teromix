@@ -52,7 +52,7 @@ function Header() {
       {isOpen && (
         <div className="fixed top-0 left-0 w-full h-full bg-white/90 flex flex-col items-center justify-center z-40">
           <nav className="flex flex-col items-center justify-center space-y-6 text-2xl sm:text-3xl md:text-4xl">
-            <Link to="/" onClick={toggleMenu} className="text-gray-800 hover:text-color1">Home</Link>
+            <Link to="/home" onClick={toggleMenu} className="text-gray-800 hover:text-color1">Home</Link>
             <Link to="/about" onClick={toggleMenu} className="text-gray-800 hover:text-color1">About Us</Link>
             <Link to="/projects" onClick={toggleMenu} className="text-gray-800 hover:text-color1">Projects</Link>
             <Link to="/services" onClick={toggleMenu} className="text-gray-800 hover:text-color1">Our Services</Link>
