@@ -79,7 +79,7 @@ const Intro = () => {
       
       <video
         ref={videoRef}
-        className="absolute top-0 left-0 w-full h-full object-fit lg:object-cover z-0"
+        className="absolute top-0 lg:top-[25%] left-0 lg:left-[25%] w-full h-full object-fit lg:object-cover lg:pt-5  z-0 lg:w-[50%] lg:h-[50%]"
         src={data.introclip}
         autoPlay
         muted
