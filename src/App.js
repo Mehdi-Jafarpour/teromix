@@ -23,7 +23,7 @@ function Main() {
 
   return (
     <>
-      <Header />
+      {location.pathname !== '/' && <Header />}
       <Routes>
         <Route path="/" exact element={<Intro />} />
         <Route path="/home" element={<Home />} />

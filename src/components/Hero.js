@@ -14,17 +14,16 @@ const Hero = () => {
   const slideImages = data.hero.map(item => ({
     image: item.photo,
     title: item.title,
-    color: item.color
   }));
 
   return (
     <section className="relative w-full h-[800px] overflow-hidden">
       <Slide 
         autoplay={true} 
-        duration={3000} 
+        duration={6000} 
         transitionDuration={800}  
-        prevArrow={<Arrow className="absolute left-0 mx-2 top-1/2 transform -translate-y-1/2 text-color1 text-4xl bg-gray-50 bg-opacity-20 rounded-full p-2 shadow-lg"><IoIosArrowBack /></Arrow>}
-        nextArrow={<Arrow className="absolute right-0 mx-2 top-1/2 transform -translate-y-1/2 text-color1 text-4xl bg-gray-50 bg-opacity-20 rounded-full p-2 shadow-lg"><IoIosArrowForward /></Arrow>}
+        prevArrow={<Arrow className="hidden absolute left-0 mx-2 top-1/2 transform -translate-y-1/2 text-color1 text-4xl bg-gray-50 bg-opacity-20 rounded-full p-2 shadow-lg"><IoIosArrowBack /></Arrow>}
+        nextArrow={<Arrow className="hidden absolute right-0 mx-2 top-1/2 transform -translate-y-1/2 text-color1 text-4xl bg-gray-50 bg-opacity-20 rounded-full p-2 shadow-lg"><IoIosArrowForward /></Arrow>}
       >
         {slideImages.map((slide, index) => (
           <div className="each-slide-effect h-[800px]" key={index}>
@@ -32,7 +31,7 @@ const Hero = () => {
               className="flex items-start sm:items-center justify-start h-full bg-cover bg-center"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <span className="w-[40rem] font-semibold text-4xl sm:text-6xl mt-20 sm:ml-20  p-4 rounded-lg text-start" style={{ color: slide.color }}>
+              <span className=" w-full  md:w-[30rem] lg:w-[40rem] h[50%] sm:h-full text-[#fdc500] bg-gray-800 bg-opacity-60 font-semibold text-2xl sm:text-3xl lg:text-6xl   p-10 pt-20  sm:pt-60 lg:-pt-48  text-start" >
                 {slide.title}
               </span>
             </div>
