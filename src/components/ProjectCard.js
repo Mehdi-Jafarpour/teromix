@@ -23,19 +23,13 @@ function ProjectCard({ project, onClose }) {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 overflow-y-auto">
-      <div className="bg-white p-6 rounded-lg relative w-full max-w-4xl max-h-[90vh] overflow-y-auto">
+      <div className="bg-white p-6 relative w-full max-w-4xl max-h-[90vh] overflow-y-auto">
         {/* Close Button */}
-        <button onClick={onClose} className="absolute top-3 right-3 bg-gray-200 hover:bg-gray-300 p-2 rounded-full">
+        <button onClick={onClose} className="absolute top-3 right-3 text-white bg-black hover:text-color1 p-2 ">
           Close
         </button>
 
-        {/* Project Information */}
-        <div className="space-y-4">
-          <h2 className="text-2xl font-semibold">{project.client}</h2>
-          <p className="text-gray-700">Location: {project.location}</p>
-          <p className="text-gray-700">Date: {project.date}</p>
-          <p className="text-gray-700">Size: {project.size}</p>
-        </div>
+       
 
         {/* Masonry Photo Grid */}
         <Masonry
@@ -43,6 +37,14 @@ function ProjectCard({ project, onClose }) {
           className="masonry-grid"
           columnClassName="masonry-grid_column"
         >
+          {/* Project Information */}
+          <div className="masonry-item space-y-4 p-5 border">
+            <h2 className="text-2xl font-semibold">{project.client}</h2>
+            <p className="text-gray-700">Location: {project.location}</p>
+            <p className="text-gray-700">Date: {project.date}</p>
+            <p className="text-gray-700">Size: {project.size}</p>
+          </div>
+
           {project.photos.map((photo, index) => (
             <div key={index} className="masonry-item">
               <img

@@ -1,17 +1,18 @@
 /* Modal Styles */
 .masonry-grid {
     display: flex;
-    margin-left: -16px; /* Adjust for spacing between columns */
+    margin-left: -5px; /* Adjust for spacing between columns */
     width: auto;
+    margin-top: 2rem;
   }
   
   .masonry-grid_column {
-    padding-left: 16px; /* Adjust for spacing between columns */
+    padding-left: 5px; /* Adjust for spacing between columns */
     background-clip: padding-box;
   }
   
   .masonry-item {
-    margin-bottom: 16px; /* Vertical gap between items */
+    margin-bottom: 5px; /* Vertical gap between items */
     overflow: hidden; /* Make sure images do not overflow */
   }
   
