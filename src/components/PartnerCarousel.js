@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { IoIosArrowForward } from 'react-icons/io';
@@ -42,12 +43,12 @@ const PartnerCarousel = ({ partners }) => {
         ))}
       </Carousel>
       <div className="flex justify-center mt-6">
-        <a
-          href="/partners"
+        <Link
+          to="/partners"
           className="inline-flex items-center justify-center px-3 py-2 border border-black text-black rounded-sm hover:bg-color2 hover:text-color1 transition min-w-40"
         >
           Our Partners <IoIosArrowForward />
-        </a>
+        </Link>
       </div>
     </div>
   );

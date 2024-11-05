@@ -1,4 +1,5 @@
 import { useData } from '../context/DataContext';
+import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
 import ProjectCarousel from './ProjetCarousel';
 import PartnerCarousel from './PartnerCarousel'
@@ -37,14 +38,14 @@ function Home() {
               {data.about[0]?.section1.description.slice(0, 300) + '...'}
             </p>
 
-            <a
-                href="/about" 
+            <Link
+                to="/about" 
                 className="flex items-center justify-center px-3 py-1 sm:px-4 sm:py-2 md:px-5 md:py-2.5 border border-black text-black rounded-md hover:bg-color2 hover:text-color1 transition max-w-40"
                 style={{ borderRadius: '2px' }}
               >
                 About Us
                 <IoIosArrowForward className="ml-1" />
-                </a>
+                </Link>
           </div>
         </section>
 
@@ -87,14 +88,14 @@ function Home() {
           <p className="text-center text-gray-500">The TEROMIX team is prepared to create original interior artwork for any project.</p>
         </div>
       </div>
-      <a
-                href="/services" 
+      <Link
+                to="/services" 
                 className="flex items-center justify-center mt-10 px-3 py-1 sm:px-4 sm:py-2 md:px-5 md:py-2.5 border border-black text-black rounded-md hover:bg-color2 hover:text-color1 transition max-w-40"
                 style={{ borderRadius: '2px' }}
               >
                 Our Services
                 <IoIosArrowForward className="ml-1" />
-                </a>
+                </Link>
     </section>
 
       {/* Partners Slider Section */}
