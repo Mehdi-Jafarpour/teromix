@@ -1,11 +1,11 @@
 import { useData } from '../context/DataContext';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom'; 
 
 function Services() {
   const data = useData();
   const servicetData = data.services;
   const logo = data.logo;
-  console.log(servicetData)
+
 
   return (
     <>
