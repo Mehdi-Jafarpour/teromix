@@ -37,41 +37,43 @@ function Partners() {
       </section>
 
       {/* Partners Section */}
-      <section className="py-20 flex flex-col items-center justify-center">
-        <h1 className="text-color1 text-3xl font-semibold my-5">{partnersData?.title}</h1>
-        <div className="w-[80%] h-full flex flex-col md:flex-row items-center justify-around flex-wrap truncate">
-          {partnersData?.cards.map((card, index) => (
-            <div
-              key={index}
-              className="w-full max-w-[250px] flex flex-col items-center my-4 mx-auto"
-            >
-              <div className="border rounded-sm overflow-hidden shadow-lg w-full min-h-[350px]">
-                <img
-                  src={card.photos[0]} 
-                  alt={card.name}
-                  className="w-full h-48 object-cover p-2" 
-                  loading="lazy"
-                />
-                <div className="p-4 flex flex-col items-center justify-center">
-                  <h3 className="text-lg font-semibold">{card.name}</h3>
-                  <p className="text-gray-500 mt-2 text-wrap">
-                    {card.description.slice(0, 50) + '...'}
-                  </p>
-                </div>
-                <div className="flex justify-center my-6">
-                    <div
-                      onClick={() => handleCardClick(card)}
-                      className="inline-flex items-center justify-center px-3 py-2 border border-black text-black rounded-sm hover:bg-color2 hover:text-color1 transition min-w-40"
-                    >
-                      More <IoIosArrowForward />
+            <section className="py-20 flex flex-col items-center justify-center">
+              <h1 className="text-color1 text-3xl font-semibold my-5">{partnersData?.title}</h1>
+              <div className="w-[60%] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {partnersData?.cards.map((card, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center "
+                  >
+                    <div className="border overflow-hidden shadow-lg w-full min-h-[450px]">
+                      <div className='min-h-[350px]'>
+                        <img
+                          src={card.photos[0]} 
+                          alt={card.name}
+                          className="w-full h-48 object-cover p-2" 
+                          loading="lazy"
+                        />
+                        <div className="p-4 flex flex-col items-center justify-center text-center">
+                          <h3 className="text-lg font-semibold text-ellipsis">{card.name}</h3>
+                          <p className="text-gray-500 mt-2 text-wrap">
+                            {card.description.slice(0, 50) + '...'}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex justify-center mt-5">
+                        <a
+                          onClick={() => handleCardClick(card)}
+                          className="inline-flex items-center justify-center px-3 py-2 border border-black text-black rounded-sm hover:bg-color2 hover:text-color1 transition min-w-40"
+                        >
+                          More <IoIosArrowForward />
+                        </a>
+                      </div>
                     </div>
+                  </div>
+                 ))}
                 </div>
-              </div>
-                  
-            </div>
-          ))}
-        </div>
-      </section>
+              </section>
+
       {isModalOpen && selectedPartner && (
         <PartnerCard partner={selectedPartner} onClose={() => setIsModalOpen(false)} />
       )}
