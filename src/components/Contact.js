@@ -29,7 +29,7 @@ function Contact() {
   return (
     <>
       {/* Title */}
-      <h1 className="text-6xl text-color1 font-bold text-center w-full mb-10 md:mb-16 mt-10">CONTACT</h1>
+      <h1 className="text-6xl text-color1 font-bold text-center w-full mb-10 md:mb-16 mt-16">CONTACT</h1>
       <div className="w-full min-h-screen py-10 px-4 md:px-16 flex flex-col md:flex-row items-start justify-between">
       {/* Contact Form */}
       <div className="w-full md:w-1/2 p-4 md:p-8 space-y-6">
