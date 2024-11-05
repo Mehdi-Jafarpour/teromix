@@ -38,9 +38,12 @@ function Header() {
         style={{ backgroundColor: headerBg }}
     >
       {showLogo && (
-        <div className="flex items-center" style={{ marginLeft: '20px' }}> 
-          <img src="/images/logo.png" alt="Logo" style={{ width: '200px' }} /> 
-        </div>
+        <Link to={"/home"} >
+          <div className="flex items-center" style={{ marginLeft: '20px' }}> 
+            <img src="/images/logo.png" alt="Logo" style={{ width: '200px' }} /> 
+         </div>
+        </Link>
+        
       )}
 
       <div className="flex justify-end items-center w-full">

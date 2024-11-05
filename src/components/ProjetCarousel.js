@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
+import { Link } from 'react-router-dom';
 import 'react-multi-carousel/lib/styles.css';
 import { IoIosArrowForward } from 'react-icons/io'; 
 
@@ -16,17 +17,19 @@ const ProjectCarousel = ({ projects }) => {
       <h2 className="text-center text-2xl font-bold mb-6">{projects.title}</h2>
       <Carousel responsive={responsive}>
         {projects.cards.map((project) => (
-          <div key={project.id} className="relative w-full h-[400px] p-2 mb-10">
-            <img
-              src={project.photos[1]} // Display the first photo from the array
-              alt={project.client}
-              className="w-full h-full object-cover rounded-sm"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-300 rounded-sm flex items-center justify-center">
-              <span className="text-white text-lg font-semibold">{project.client}</span>
+          <Link  to={"/projects"} >
+            <div key={project.id} className="relative w-full h-[400px] p-2 mb-10">
+              <img
+                src={project.photos[1]} // Display the first photo from the array
+                alt={project.client}
+                className="w-full h-full object-cover rounded-sm"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-300 rounded-sm flex items-center justify-center">
+                <span className="text-white text-lg font-semibold">{project.client}</span>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </Carousel>
       <a

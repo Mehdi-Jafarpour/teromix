@@ -37,8 +37,8 @@ function Services() {
             {servicetData.cards?.map((card, index) => (
               <Link 
                 key={index} 
-                to="/projects" // Change this to the correct path for Projects.js
-                className="bg-black text-white overflow-hidden" // Removed transform classes from card
+                to="/projects" 
+                className="bg-black text-white overflow-hidden" 
                 style={{ width: '250px', height: '520px' }}
               >
                 <h3 className="text-xl font-semibold text-center mt-2">{card.title}</h3>
