@@ -50,6 +50,7 @@ function ProjectCard({ project, onClose }) {
                 alt={`Project ${project.id}`}
                 className="w-full h-full object-cover transition-transform transform hover:scale-105 cursor-pointer"
                 onClick={() => openLightbox(index)}
+                loading="lazy"
               />
             </div>
           ))}

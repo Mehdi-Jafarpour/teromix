@@ -45,7 +45,8 @@ function Services() {
                 <img 
                   src={card.photo} 
                   alt={card.title} 
-                  className="w-full h-auto object-cover mt-5 transition-transform transform hover:scale-105" // Added hover effect on image only
+                  className="w-full h-auto object-cover mt-5 transition-transform transform hover:scale-105"
+                  loading="lazy"
                 />
               </Link>
             ))}

@@ -24,6 +24,7 @@ function Home() {
               src={data.about[0]?.background2} 
               alt="About Background"
               className="w-full h-auto  object-cover"
+              loading="lazy"
             />
           </div>
           

@@ -21,6 +21,7 @@ const ProjectCarousel = ({ projects }) => {
               src={project.photos[1]} // Display the first photo from the array
               alt={project.client}
               className="w-full h-full object-cover rounded-sm"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-300 rounded-sm flex items-center justify-center">
               <span className="text-white text-lg font-semibold">{project.client}</span>

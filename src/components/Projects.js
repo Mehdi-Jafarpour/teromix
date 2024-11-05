@@ -85,7 +85,7 @@ function Projects() {
               src={project.photos[0]}
               alt={project.client}
               className="w-full h-auto object-cover"
-              
+              loading="lazy"
             />
             <div onClick={() => handlePhotoClick(project)} className="absolute inset-0 bg-black bg-opacity-50 cursor-pointer flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <h2 className="text-white text-xl">{project.client}</h2>

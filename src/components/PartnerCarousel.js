@@ -29,6 +29,7 @@ const PartnerCarousel = ({ partners }) => {
                 src={card.photos[0]} 
                 alt={card.name}
                 className="w-full h-48 object-cover p-2" 
+                loading="lazy"
               />
               <div className="p-4 text-center">
                 <h3 className="text-lg font-semibold">{card.name}</h3>
