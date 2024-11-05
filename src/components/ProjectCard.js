@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Masonry from 'react-masonry-css';
-import './ProjectCard.css'; // Custom styling
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css'; // Import the lightbox styles
+import './ProjectCard.css'; // Your custom styling
 
 function ProjectCard({ project, onClose }) {
+  // State to handle the lightbox
+  const [isOpen, setIsOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
+
   // Masonry breakpoint columns for responsiveness
   const breakpointColumnsObj = {
     default: 3, // 3 columns for large screens
     1024: 2,    // 2 columns for medium screens
     768: 1      // 1 column for smaller screens
+  };
+
+  const openLightbox = (index) => {
+    setPhotoIndex(index);
+    setIsOpen(true);
   };
 
   return (
@@ -37,11 +48,28 @@ function ProjectCard({ project, onClose }) {
               <img
                 src={photo}
                 alt={`Project ${project.id}`}
-                className="w-full h-full object-cover transition-transform transform hover:scale-105"
+                className="w-full h-full object-cover transition-transform transform hover:scale-105 cursor-pointer"
+                onClick={() => openLightbox(index)}
               />
             </div>
           ))}
         </Masonry>
+
+        {/* Lightbox */}
+        {isOpen && (
+          <Lightbox
+            mainSrc={project.photos[photoIndex]}
+            nextSrc={project.photos[(photoIndex + 1) % project.photos.length]}
+            prevSrc={project.photos[(photoIndex + project.photos.length - 1) % project.photos.length]}
+            onCloseRequest={() => setIsOpen(false)}
+            onMovePrevRequest={() =>
+              setPhotoIndex((photoIndex + project.photos.length - 1) % project.photos.length)
+            }
+            onMoveNextRequest={() =>
+              setPhotoIndex((photoIndex + 1) % project.photos.length)
+            }
+          />
+        )}
       </div>
     </div>
   );
