@@ -24,10 +24,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        'service_mt4nq2r', // Replace with your EmailJS service ID
-        'template_ffdcrwe', // Replace with your EmailJS template ID
+        'service_mt4nq2r', 
+        'template_ffdcrwe', 
         form.current,
-        'chWHJdJVbadL_7ekO' // Replace with your EmailJS user ID
+        'chWHJdJVbadL_7ekO' 
       )
       .then(
         (result) => {

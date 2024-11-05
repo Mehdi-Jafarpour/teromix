@@ -17,7 +17,7 @@ const Card = ({ title, photo, description }) => {
 const About = () => {
   const data = useData();
 
-  if (!data || !data.about) return null; // Return null or a loading indicator if data is not available
+  if (!data || !data.about) return null; 
 
   const aboutData = data.about[0];
   const logo = data.logo;

@@ -12,7 +12,7 @@ function Header() {
   const toggleMenu = () => {
     setIsOpen((prev) => {
       const newIsOpen = !prev;
-      // If closing the menu, reset the showDownloads state
+      
       if (!newIsOpen) {
         setShowDownloads(false);
       }

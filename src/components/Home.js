@@ -9,7 +9,7 @@ function Home() {
   const data = useData();
   
   if (!data) {
-    return null; // Return null or a loading indicator if data is not available
+    return null; 
   }
 
   return (

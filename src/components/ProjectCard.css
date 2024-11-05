@@ -1,4 +1,4 @@
-/* Modal Styles */
+
 .masonry-grid {
     display: flex;
     margin-left: -5px; /* Adjust for spacing between columns */
@@ -13,7 +13,7 @@
   
   .masonry-item {
     margin-bottom: 5px; /* Vertical gap between items */
-    overflow: hidden; /* Make sure images do not overflow */
+    overflow: hidden; 
   }
   
   .masonry-item img {

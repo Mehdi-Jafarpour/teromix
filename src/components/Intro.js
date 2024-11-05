@@ -9,7 +9,7 @@ const Intro = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    if (!data) return; // Only proceed if data is available
+    if (!data) return; 
 
     // GSAP timeline for animations
     const tl = gsap.timeline({ paused: true });

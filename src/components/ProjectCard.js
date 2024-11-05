@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Masonry from 'react-masonry-css';
 import Lightbox from 'react-18-image-lightbox';
-import 'react-18-image-lightbox/style.css'; // Import the lightbox styles
-import './ProjectCard.css'; // Your custom styling
+import 'react-18-image-lightbox/style.css'; 
+import './ProjectCard.css'; 
 
 function ProjectCard({ project, onClose }) {
   // State to handle the lightbox

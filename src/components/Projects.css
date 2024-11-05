@@ -11,5 +11,5 @@
 
 /* Adjust the vertical gap between items */
 .my-masonry-grid_column > div {
-  margin-bottom: 5px; /* Reduce this value to decrease the vertical gap */
+  margin-bottom: 5px; 
 }

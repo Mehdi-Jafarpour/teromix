@@ -1,20 +1,20 @@
 header {
-    display: flex; /* Ensure the header is a flex container */
-    justify-content: space-between; /* Space between logo and button */
-    align-items: center; /* Center items vertically */
-    padding: 1rem; /* Add some padding */
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem; 
+    transition: background-color 0.3s; 
   }
   
   .flex {
-    flex: 1; /* Allow flex items to take available space */
+    flex: 1; 
   }
   
   header img {
-    display: block; /* Prevent any spacing issues */
+    display: block;
   }
   
   button {
-    margin-left: auto; /* Push the button to the right */
+    margin-left: auto; 
   }
   
