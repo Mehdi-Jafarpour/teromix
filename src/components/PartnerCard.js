@@ -52,6 +52,7 @@ function PartnersCard({ partner, onClose }) {
                 loading="lazy"
               />
             </div>
+                
           ))}
         </Masonry>
 

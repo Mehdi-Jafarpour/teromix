@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useData } from '../context/DataContext';
 import PartnerCard from './PartnerCard';
+import { IoIosArrowForward } from 'react-icons/io';
 
 
 function Partners() {
@@ -42,9 +43,9 @@ function Partners() {
           {partnersData?.cards.map((card, index) => (
             <div
               key={index}
-              className="w-full max-w-[250px] flex flex-col items-center my-4 mx-auto transition-transform transform hover:scale-105 cursor-pointer"
+              className="w-full max-w-[250px] flex flex-col items-center my-4 mx-auto"
             >
-              <div onClick={() => handleCardClick(card)} className="border rounded-sm overflow-hidden shadow-lg w-full min-h-[350px]">
+              <div className="border rounded-sm overflow-hidden shadow-lg w-full min-h-[350px]">
                 <img
                   src={card.photos[0]} 
                   alt={card.name}
@@ -57,7 +58,16 @@ function Partners() {
                     {card.description.slice(0, 50) + '...'}
                   </p>
                 </div>
+                <div className="flex justify-center my-6">
+                    <div
+                      onClick={() => handleCardClick(card)}
+                      className="inline-flex items-center justify-center px-3 py-2 border border-black text-black rounded-sm hover:bg-color2 hover:text-color1 transition min-w-40"
+                    >
+                      More <IoIosArrowForward />
+                    </div>
+                </div>
               </div>
+                  
             </div>
           ))}
         </div>
