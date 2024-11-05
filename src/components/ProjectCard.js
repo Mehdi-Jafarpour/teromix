@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Masonry from 'react-masonry-css';
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css'; // Import the lightbox styles
+import Lightbox from 'react-18-image-lightbox';
+import 'react-18-image-lightbox/style.css'; // Import the lightbox styles
 import './ProjectCard.css'; // Your custom styling
 
 function ProjectCard({ project, onClose }) {
@@ -28,8 +28,6 @@ function ProjectCard({ project, onClose }) {
         <button onClick={onClose} className="absolute top-3 right-3 text-white bg-black hover:text-color1 p-2 ">
           Close
         </button>
-
-       
 
         {/* Masonry Photo Grid */}
         <Masonry
