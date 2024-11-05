@@ -1,0 +1,31 @@
+/* Modal Styles */
+.masonry-grid {
+    display: flex;
+    margin-left: -5px; /* Adjust for spacing between columns */
+    width: auto;
+    margin-top: 2rem;
+  }
+  
+  .masonry-grid_column {
+    padding-left: 5px; /* Adjust for spacing between columns */
+    background-clip: padding-box;
+  }
+  
+  .masonry-item {
+    margin-bottom: 5px; /* Vertical gap between items */
+    overflow: hidden; /* Make sure images do not overflow */
+  }
+  
+  .masonry-item img {
+    display: block;
+    width: 100%;
+    height: auto; /* Maintain the image aspect ratio */
+    object-fit: cover;
+  }
+  
+  /* Modal Container */
+  .fixed {
+    max-height: 100vh; /* Limit modal height */
+    overflow-y: auto; /* Enable scrolling if content is too tall */
+  }
+  
