@@ -52,7 +52,7 @@ function Partners() {
                   className="w-full h-48 object-cover p-2" 
                   loading="lazy"
                 />
-                <div className="p-4 text-center">
+                <div className="p-4 flex flex-col items-center justify-center">
                   <h3 className="text-lg font-semibold">{card.name}</h3>
                   <p className="text-gray-500 mt-2 text-wrap">
                     {card.description.slice(0, 50) + '...'}
