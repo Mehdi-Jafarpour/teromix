@@ -80,14 +80,30 @@ function Contact() {
       </div>
 
       {/* Contact Information */}
-      <div className="w-full md:w-1/2 p-4 md:p-8 space-y-4">
+      <div className="w-full md:w-1/2 p-4 mt-5 md:p-8 space-y-4">
         <h2 className="text-2xl font-semibold">Contact Information</h2>
         <div className="text-lg text-gray-700 space-y-2">
-          <p><strong>Address:</strong> 123 Main Street, City, Country</p>
-          <p><strong>Phone:</strong> +1 234 567 890</p>
-          <p><strong>Email:</strong> contact@yourcompany.com</p>
+          <p><strong>Address:</strong> 142 Grigol Lortkipanidze St., Tbilisi, Georgia</p>
+          <p><strong>Phone (Georgian Speaking):</strong> +995 598 011 000</p>
+          <p><strong>Phone (English Speaking):</strong> +995 591 644 666</p>
+          <p><strong>Emails:</strong> info@teromix.ge, marketing@teromix.ge</p>
+        </div>
+
+        {/* Google Map Embed */}
+       <div className="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1489.9938006514308!2d44.89699383315426!3d41.67761119968486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440e725a731dad%3A0xd9d8a56d1dba5a60!2s142%20Grigol%20Lortkipanidze%20St%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1730813189661!5m2!1sen!2sge"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            title="Workshop Location"
+          ></iframe>
         </div>
       </div>
+      
+       
     </div>
     
     </>
