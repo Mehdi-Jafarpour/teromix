@@ -21,11 +21,11 @@ function Home() {
       {/* About Section */}
       <section className="h-screen flex flex-col-reverse md:flex-row items-center mt-28 sm:mt-0 sm:mx-20 " >
           
-          <div className="lg:w-1/2 photo">
+          <div className="lg:w-1/2 ">
             <img
               src={data.about[0]?.background2} 
               alt="About Background"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover photo"
               loading="lazy"
             />
           </div>

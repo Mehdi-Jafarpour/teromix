@@ -3,7 +3,7 @@
     animation-timeline: view();
 }
 @keyframes fade-in {
-    from { scale: .5; opacity: .8;}
+    from { scale: 1;opacity: .8; }
     to { scale: 1.2; opacity: 1;}
 }
 
