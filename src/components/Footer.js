@@ -11,6 +11,12 @@ const Footer = () => {
 
       <div className="container mx-auto px-4">
         <div className="flex justify-center sm:justify-between items-center">
+
+           <Link to={"/home"} >
+              <div className="flex items-center"> 
+                <img src="/images/logo.png" alt="Logo" style={{ width: '200px' }} /> 
+              </div>
+            </Link>
     
             <nav className="hidden sm:flex space-x-3 text-sm">
               <Link to="/" className="text-gray-800 hover:text-color1">
@@ -32,6 +38,7 @@ const Footer = () => {
                 Contact Us
               </Link>
             </nav>
+            
 
     
             <div className="flex justify-center sm:justify-end space-x-4 mb-4 md:mb-0">

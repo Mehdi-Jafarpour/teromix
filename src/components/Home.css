@@ -1,0 +1,17 @@
+.photo {
+    animation: fade-in linear;
+    animation-timeline: view();
+}
+@keyframes fade-in {
+    from { scale: .5; opacity: .8;}
+    to { scale: 1.2; opacity: 1;}
+}
+
+.circle {
+    animation: zoom-out linear;
+    animation-timeline: view();
+}
+@keyframes zoom-out {
+    from { scale: 2; margin-bottom: 15px; }
+    to { scale: 1; margin-bottom: 2px;}
+}

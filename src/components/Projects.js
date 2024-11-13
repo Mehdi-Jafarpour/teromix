@@ -71,12 +71,13 @@ function Projects() {
       </div>
 
       {/* Divider Line */}
-      <div className="my-4 mx-auto w-1/2 border-t border-gray-300" />
+      <div className="my-4 mx-auto w-1/2 border-t border-gray-300 " />
 
       {/* Photo Grid */}
+      <div className='mx-2'>
       <Masonry
         breakpointCols={breakpointColumnsObj}
-        className="my-masonry-grid mb-10"
+        className="my-masonry-grid mb-4"
         columnClassName="my-masonry-grid_column"
       >
         {filteredProjects.map((project) => (
@@ -93,6 +94,7 @@ function Projects() {
           </div>
         ))}
       </Masonry>
+      </div>
 
       {/* Modal for Project Details */}
       {isModalOpen && selectedProject && (

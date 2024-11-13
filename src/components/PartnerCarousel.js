@@ -13,9 +13,10 @@ const responsive = {
 
 const PartnerCarousel = ({ partners }) => {
   return (
-    <div className="py-10">
+    <div className="py-10 h-full">
       <h2 className="text-center text-2xl font-bold mb-6">{partners?.title}</h2>
       <Carousel
+        className='z-0'
         responsive={responsive}
         itemClass="px-4" 
         containerClass="mx-auto" 

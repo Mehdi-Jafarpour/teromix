@@ -4,6 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import ProjectCarousel from './ProjetCarousel';
 import PartnerCarousel from './PartnerCarousel'
 import Hero from './Hero';
+import './Home.css'
 
 function Home() {
   const data = useData();
@@ -18,20 +19,20 @@ function Home() {
         <Hero />
 
       {/* About Section */}
-      <section className="flex flex-col-reverse md:flex-row items-center py-40 mx-5 sm:mx-20" >
+      <section className="h-screen flex flex-col-reverse md:flex-row items-center mt-28 sm:mt-0 sm:mx-20 " >
           
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 photo">
             <img
               src={data.about[0]?.background2} 
               alt="About Background"
-              className="w-full h-auto  object-cover"
+              className="w-full h-auto object-cover"
               loading="lazy"
             />
           </div>
           
          
-          <div className=" lg:w-1/2 px-5 mb-2 ">
-            <h2 className="text-2xl font-bold mb-4">
+          <div className=" lg:w-1/2 px-20 mb-2 ">
+            <h2 className="text-3xl font-bold mb-4">
               {data.about[0]?.section1.title || 'About Us'}
             </h2>
             <p className="mb-10 text-justify">
@@ -50,20 +51,20 @@ function Home() {
         </section>
 
       {/* Projects Slider Section */}
-      <section id="projects-slider">
+      <section id="projects-slider" className='h-[100vh]'>
         <ProjectCarousel projects={data.projects} />
         
       </section>
 
       {/* Our Services Section */}
-      <section className="py-10 my-10 p-20 flex flex-col items-center justify-center" style={{"backgroundColor": "#F5F5F5"}}>
+      <section className="h-full  my-10 p-20 flex flex-col items-center justify-center" style={{"backgroundColor": "#F5F5F5"}}>
       <h2 className="text-center text-2xl font-bold mb-4">{data?.services.title}</h2>
       <p className="text-center text-gray-600 mb-8 ">{data?.services.description.slice(0, 161) + '...'}</p>
 
-      <div className="flex flex-col items-center gap-6 md:flex-row md:justify-center md:gap-10 mt-10">
+      <div className="flex flex-col items-center gap-6 md:flex-row md:justify-center md:gap-1 my-10 p-5">
         {/* Service 1 */}
-        <div className="flex flex-col items-center">
-          <div className="w-24 h-24 rounded-full p-5 bg-color1 border-8 border-orange-100 flex items-center justify-center text-white text-3xl font-bold" >
+        <div className="flex flex-col items-center ">
+          <div className="circle w-24 h-24 rounded-full p-5 bg-color1 border-8 border-orange-100 flex items-center justify-center text-white text-3xl font-bold" >
             1
           </div>
           <h3 className="mt-4 text-lg font-semibold">Fit-Out and Joinery</h3>
@@ -72,7 +73,7 @@ function Home() {
 
         {/* Service 2 */}
         <div className="flex flex-col items-center">
-          <div className="w-24 h-24 rounded-full p-5 bg-color1 border-8 border-orange-100 flex items-center justify-center text-white text-3xl font-bold">
+          <div className="circle w-24 h-24 rounded-full p-5 bg-color1 border-8 border-orange-100 flex items-center justify-center text-white text-3xl font-bold">
             2
           </div>
           <h3 className="mt-4 text-lg font-semibold">Interior Product</h3>
@@ -81,7 +82,7 @@ function Home() {
 
         {/* Service 3 */}
         <div className="flex flex-col items-center">
-          <div className="w-24 h-24 rounded-full p-5 bg-color1 border-8 border-orange-100 flex items-center justify-center text-white text-3xl font-bold">
+          <div className="circle w-24 h-24 rounded-full p-5 bg-color1 border-8 border-orange-100 flex items-center justify-center text-white text-3xl font-bold">
             3
           </div>
           <h3 className="mt-4 text-lg font-semibold">Art Works</h3>
@@ -90,7 +91,7 @@ function Home() {
       </div>
       <Link
                 to="/services" 
-                className="flex items-center justify-center mt-10 px-3 py-1 sm:px-4 sm:py-2 md:px-5 md:py-2.5 border border-black text-black rounded-md hover:bg-color2 hover:text-color1 transition max-w-40"
+                className="min-w-[200px] max-h-[50px] flex items-center justify-center border border-black text-black rounded-md hover:bg-color2 hover:text-color1 transition "
                 style={{ borderRadius: '2px' }}
               >
                 Our Services

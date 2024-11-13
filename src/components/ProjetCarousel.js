@@ -3,6 +3,7 @@ import Carousel from 'react-multi-carousel';
 import { Link } from 'react-router-dom';
 import 'react-multi-carousel/lib/styles.css';
 import { IoIosArrowForward } from 'react-icons/io'; 
+import './ProjetCarousel.css';
 
 const responsive = {
   superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 4 },
@@ -14,8 +15,8 @@ const responsive = {
 const ProjectCarousel = ({ projects }) => {
   return (
     <div className="py-10 text-center">
-      <h2 className="text-center text-2xl font-bold mb-6">{projects.title}</h2>
-      <Carousel responsive={responsive}>
+      <h2 className="text-center text-3xl font-bold mb-6 title">{projects.title}</h2>
+      <Carousel responsive={responsive} className='z-0'>
         {projects.cards.map((project) => (
           <Link  to={"/projects"} >
             <div key={project.id} className="relative w-full h-[400px] p-2 mb-10">
@@ -36,7 +37,7 @@ const ProjectCarousel = ({ projects }) => {
           href="/projects"
           className="inline-flex items-center justify-center mt-4 px-3 py-2 border border-black text-black rounded-sm hover:bg-color2 hover:text-color1 transition min-w-40"
         >
-          Projets <IoIosArrowForward />
+          More Projects <IoIosArrowForward />
         </a>
     </div>
   );

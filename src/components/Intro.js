@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { useNavigate } from 'react-router-dom';
 import { useData } from '../context/DataContext';
+import './Intro.css'
 
 const Intro = () => {
   const navigate = useNavigate();
@@ -86,7 +87,7 @@ const Intro = () => {
         playsInline
       ></video>
 
-      <p className="press-enter text-color2 opacity-0 absolute bottom-40 left-1/2 transform -translate-x-1/2 text-lg sm:text-xl md:text-2xl cursor-pointer z-10">
+      <p className="press-enter blinking-button  text-center opacity-0 absolute bottom-40 left-1/2 transform -translate-x-1/2 text-xl sm:text-xl md:text-2xl cursor-pointer z-10">
         Enter...
       </p>
     </div>

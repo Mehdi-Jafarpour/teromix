@@ -247,6 +247,22 @@
             "/images/project12-3.jpg",
             "/images/project12-4.jpg"
           ]
+        },
+        {
+          "id":13,
+          "category":"retail",
+          "client": "CAVIAR CLASSIC",
+          "location": "DUBAI, UAE",
+          "date":"Since 2016",
+          "size": "200 Sq.m",
+          "photos": [
+            "/images/project13-1.jpeg",
+            "/images/project13-2.jpeg",
+            "/images/project13-3.jpeg",
+            "/images/project13-4.jpeg",
+            "/images/project13-5.jpeg",
+            "/images/project13-6.jpeg"
+          ]
         }
       ]
     },

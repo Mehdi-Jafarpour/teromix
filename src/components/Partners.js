@@ -63,7 +63,7 @@ function Partners() {
                       <div className="flex justify-center cursor-pointer mt-5">
                         <a
                           onClick={() => handleCardClick(card)}
-                          className="inline-flex items-center justify-center px-3 py-2 border border-black text-black rounded-sm hover:bg-color2 hover:text-color1 transition min-w-40"
+                          className="inline-flex items-center justify-center px-3 py-2 border border-color2 text-black rounded-sm hover:bg-color2 hover:text-color1 transition min-w-40"
                         >
                           More <IoIosArrowForward />
                         </a>
