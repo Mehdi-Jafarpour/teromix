@@ -1,5 +1,6 @@
 import React from 'react';
 import { useData } from '../context/DataContext';
+import'./About.css'
 
 // Card component to reuse
 const Card = ({ title, photo, description }) => {
@@ -56,7 +57,7 @@ const About = () => {
           <img
             src={aboutData?.section1?.photo}
             alt="Who We Are"
-            className="w-[400px] h-[400px] object-cover mt-5 lg:mt-0"
+            className="w-[400px] h-[400px] object-cover mt-5 lg:mt-0 photo"
           />
         </div>
       </section>
@@ -68,7 +69,7 @@ const About = () => {
           <img
             src={aboutData?.section2?.photo}
             alt="Who We Are"
-            className="w-[400px] h-auto object-cover mb-5 lg:mb-0"
+            className="w-[400px] h-auto object-cover mb-5 lg:mb-0 photo"
           />
         </div>
         {/* Text Content */}

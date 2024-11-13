@@ -1,0 +1,8 @@
+.photo {
+    animation: fade-in linear;
+    animation-timeline: Scroll();
+}
+@keyframes fade-in {
+    from { scale: .8;  opacity: .8;}
+    to { scale: 1.2; opacity: 1;}
+}

@@ -91,7 +91,7 @@ function Home() {
       </div>
       <Link
                 to="/services" 
-                className="min-w-[200px] max-h-[50px] flex items-center justify-center border border-black text-black rounded-md hover:bg-color2 hover:text-color1 transition "
+                className="min-w-[200px] p-2 flex items-center justify-center border border-black text-black rounded-md hover:bg-color2 hover:text-color1 transition "
                 style={{ borderRadius: '2px' }}
               >
                 Our Services
