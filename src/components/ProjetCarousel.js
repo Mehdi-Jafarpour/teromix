@@ -33,12 +33,12 @@ const ProjectCarousel = ({ projects }) => {
           </Link>
         ))}
       </Carousel>
-      <a
-          href="/projects"
+      <Link
+          to="/projects"
           className="inline-flex items-center justify-center mt-4 px-3 py-2 border border-black text-black rounded-sm hover:bg-color2 hover:text-color1 transition min-w-40"
         >
           More Projects <IoIosArrowForward />
-        </a>
+        </Link>
     </div>
   );
 };
