@@ -284,6 +284,29 @@
       "background": "/images/partnerback.jpg",
       "cards": [
         {
+          "name": " LAMINATED MESH & FABRIC WITH GLASS ",
+          "description": "Easy to clean and maintenance .different designs with fabric and metal mesh. suitable for doors, partitions and designer tastes.",
+          "material": "Glass & Fabric",
+          "photos":[
+            "/images/glass1.jpg",
+            "/images/glass2.jpg",
+            "/images/glass3.jpg",
+            "/images/glass4.jpg",
+            "/images/glass5.jpg",
+            "/images/glass6.jpg"
+          ]
+        },
+        {
+          "name": "Plexiglass Laminated MDF ",
+          "description": "Plexiglas laminated MDF combines the strength of Medium Density Fiberboard with a sleek, high-gloss Plexiglas finish. It is durable, scratch-resistant, and ideal for modern furniture, cabinets, and interior panels.",
+          "material": "MDF & Plexiglas",
+          "photos":[
+            "/images/plexi1.jpg",
+            "/images/plexi2.jpg",
+            "/images/plexi3.jpg"
+          ]
+        },
+        {
           "name": "Doors and Special Millworks ",
           "description": "Security Doors Component",
           "material": "Natural Oak Veneer",
@@ -319,30 +342,8 @@
             "/images/frame2.jpg",
             "/images/frame3.jpg"
           ]
-        },
-        {
-          "name": " LAMINATED MESH & FABRIC WITH GLASS ",
-          "description": "Easy to clean and maintenance .different designs with fabric and metal mesh. suitable for doors, partitions and designer tastes.",
-          "material": "Glass & Fabric",
-          "photos":[
-            "/images/glass1.jpg",
-            "/images/glass2.jpg",
-            "/images/glass3.jpg",
-            "/images/glass4.jpg",
-            "/images/glass5.jpg",
-            "/images/glass6.jpg"
-          ]
-        },
-        {
-          "name": "Plexiglass Laminated MDF ",
-          "description": "Plexiglas laminated MDF combines the strength of Medium Density Fiberboard with a sleek, high-gloss Plexiglas finish. It is durable, scratch-resistant, and ideal for modern furniture, cabinets, and interior panels.",
-          "material": "MDF & Plexiglas",
-          "photos":[
-            "/images/plexi1.jpg",
-            "/images/plexi2.jpg",
-            "/images/plexi3.jpg"
-          ]
         }
+        
       ]
     }
   }

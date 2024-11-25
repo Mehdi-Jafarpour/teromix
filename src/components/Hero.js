@@ -33,7 +33,7 @@ const Hero = () => {
               className="flex items-start sm:items-center justify-start h-full bg-cover bg-center"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <span className=" w-full  md:w-[30rem] lg:w-[40rem] h[50%] sm:h-full text-[#fdc500] bg-gray-800 bg-opacity-60 font-semibold text-2xl sm:text-5xl lg:text-7xl   p-10 pt-20  sm:p-20   text-start" >
+              <span className=" w-full  md:w-[30rem] lg:w-[40rem] h[50%] sm:h-full text-[#fdc500] bg-gray-800 bg-opacity-60 font-semibold text-2xl sm:text-3xl lg:text-4xl   p-10 pt-20 sm:pt-60 text-start" >
                 {slide.title}
               </span>
             </div>

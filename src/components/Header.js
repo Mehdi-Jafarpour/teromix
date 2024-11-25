@@ -73,7 +73,7 @@ function Header() {
               {showDownloads && (
                 <div className="absolute left-10 sm:left-28 w-60 z-50 fade-in-text">
                   <a 
-                    href="https://online.flippingbook.com/view/316928134/?_gl=1*6z2fsu*_gcl_au*MTg0NDQyMTI3MC4xNzI5ODI3MzIx" 
+                    href="https://drive.google.com/file/d/114emXvTahheHn0dSjAc30f_n6x-tDmCK/view?usp=drive_link" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     onClick={toggleMenu}
