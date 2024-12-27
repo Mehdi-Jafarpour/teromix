@@ -104,7 +104,9 @@ function Contact() {
         {/* Contact Information */}
         <div className="w-full md:w-1/2 p-4 mt-5 md:p-8 space-y-4">
           <h2 className="text-2xl font-semibold">Contact Information</h2>
+          <div>
           <div className="text-lg text-gray-700 space-y-2">
+            <h3>Georgian Workshop</h3>
             <p><strong>Address:</strong> 142 Grigol Lortkipanidze St., Tbilisi, Georgia</p>
             <p><strong>Phone (Georgian Speaking):</strong> +995 598 011 000</p>
             <p><strong>Phone (English Speaking):</strong> +995 591 644 666</p>
@@ -122,6 +124,23 @@ function Contact() {
               loading="lazy"
               title="Workshop Location"
             ></iframe>
+          </div>
+          </div>
+          <div className="text-lg text-gray-700 space-y-2">
+            <h3>UAE Workshop</h3>
+            <p><strong>Address:</strong> Port Saeed Area, Alkhabaisi St, Deira, P.O.Box:84004, Dubai, UAE</p>
+            <p><strong>Phone (Arabic Speaking):</strong> +971 50 465 6767</p>
+            <p><strong>Phone (English Speaking):</strong> +971 50 775 2642</p>
+          </div>
+          <div className="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14432.522360105926!2d55.32747204526653!3d25.266192097712285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPort%20Saeed%20Area%2C%20Alkhabaisi%20St%2C%20Deira%2C%20P.O.Box%3A84004!5e0!3m2!1sen!2sge!4v1735306823951!5m2!1sen!2sge" 
+          width="100%" 
+          height="400" 
+          style={{ border: 0 }} 
+          allowfullscreen="" 
+          loading="lazy" 
+          title="Workshop Location"
+          ></iframe>
           </div>
         </div>
       </div>
