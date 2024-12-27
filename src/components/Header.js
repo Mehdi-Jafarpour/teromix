@@ -73,7 +73,7 @@ function Header() {
               {showDownloads && (
                 <div className="absolute left-10 sm:left-28 w-60 z-50 fade-in-text">
                   <a 
-                    href="https://drive.google.com/file/d/114emXvTahheHn0dSjAc30f_n6x-tDmCK/view?usp=drive_link" 
+                    href="./images/pdf-files/TEROMIX CATALOGUE 2024-1_Optimized.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     onClick={toggleMenu}

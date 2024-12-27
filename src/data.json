@@ -263,6 +263,42 @@
             "/images/project13-5.jpeg",
             "/images/project13-6.jpeg"
           ]
+        },
+        {
+          "id":14,
+          "category":"hotel",
+          "client": "SHAZA HOTEL",
+          "location": "RIYADH, KSA",
+          "date":"2016",
+          "size": "205 ROOMS",
+          "photos": [
+            "/images/project14-1.jpg",
+            "/images/project14-2.jpg",
+            "/images/project14-3.jpg",
+            "/images/project14-4.jpg",
+            "/images/project14-5.jpg",
+            "/images/project14-6.jpg",
+            "/images/project14-7.jpg"
+          ]
+        },
+        {
+          "id":15,
+          "category":"hotel",
+          "client": "FULI LAI",
+          "location": "DUBAI, UAE",
+          "date":"2019",
+          "size": "Mock Up Room",
+          "photos": [
+            "/images/project15-1.jpg",
+            "/images/project15-2.jpg",
+            "/images/project15-3.jpg",
+            "/images/project15-4.jpg",
+            "/images/project15-5.jpg",
+            "/images/project15-6.jpg",
+            "/images/project15-7.jpg",
+            "/images/project15-8.jpg",
+            "/images/project15-9.jpg"
+          ]
         }
       ]
     },
@@ -341,6 +377,30 @@
             "/images/frame1.jpg",
             "/images/frame2.jpg",
             "/images/frame3.jpg"
+          ]
+        },
+        {
+          "name": "Veneers ",
+          "description": "Coating Materials",
+          "material": "Natural Veneer",
+          "link": "./images/pdf-files/Natural-Veneer.pdf",
+          "photos":[
+            "/images/veneerN1.jpg",
+            "/images/veneerN2.jpg",
+            "/images/veneerN3.jpg",
+            "/images/veneerN4.jpg"
+          ]
+        },
+        {
+          "name": "Veneers ",
+          "description": "Coating Materials",
+          "material": "Processed Veneer",
+          "link": "./images/pdf-files/Processed-Veneer.pdf",
+          "photos":[
+            "/images/veneerP1.jpg",
+            "/images/veneerP2.jpg",
+            "/images/veneerP3.jpg",
+            "/images/veneerP4.jpg"
           ]
         }
         

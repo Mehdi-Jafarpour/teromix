@@ -39,7 +39,19 @@ function PartnersCard({ partner, onClose }) {
           <div className="masonry-item space-y-4 p-5 border">
             <h2 className="text-2xl font-semibold">{partner.name}</h2>
             <p className="text-gray-700">{partner.description}</p>
-            <p className="text-gray-700">Category: {partner.category}</p>
+            <p className="text-gray-700">Materials: {partner.material}</p>
+            {partner.link && (
+              <a
+              href={partner.link} 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="min-w-[200px] p-2 flex items-center justify-center border border-black text-black rounded-md hover:bg-color2 hover:text-color1 transition "
+              style={{ borderRadius: '2px' }}
+            >
+              View The Full Catalog 
+              
+              </a>
+            )}
           </div>
 
           {partner.photos.map((photo, index) => (
