@@ -151,7 +151,7 @@
         },
         {
           "id":6,
-          "category":"retail",
+          "category":"Retails",
           "client": "Roya Gallery",
           "location": "DUBAI, UAE",
           "date":"2015",
@@ -166,7 +166,7 @@
         },
         {
           "id":7,
-          "category":"retail",
+          "category":"Retails",
           "client": "Bell Center",
           "location": "TEHRAN, IRAN",
           "date":"2015",
@@ -180,7 +180,7 @@
         },
         {
           "id":8,
-          "category":"retail",
+          "category":"Retails",
           "client": "CYAN / SAMSUNG CHAIL",
           "location": "TEHRAN, IRAN",
           "date":"2016",
@@ -194,7 +194,7 @@
         },
         {
           "id":9,
-          "category":"retail",
+          "category":"Retails",
           "client": "SBID / SHIMA Resaurant",
           "location": "DUBAI, UAE",
           "date":"2021",
@@ -208,7 +208,7 @@
         },
         {
           "id":10,
-          "category":"hotel",
+          "category":"Hotels",
           "client": "ROSE Hotel",
           "location": "DUBAI, UAE",
           "date":"2018",
@@ -222,7 +222,7 @@
         },
         {
           "id":11,
-          "category":"hotel",
+          "category":"Hotels",
           "client": "H&H",
           "location": "KUWAIT",
           "date":"2016",
@@ -236,7 +236,7 @@
         },
         {
           "id":12,
-          "category":"residental",
+          "category":"Residentals",
           "client": "PRIVATE RESIDENTIALS",
           "location": "TEHRAN And DUBAI",
           "date":"Since 2016",
@@ -250,7 +250,7 @@
         },
         {
           "id":13,
-          "category":"retail",
+          "category":"Retails",
           "client": "CAVIAR CLASSIC",
           "location": "DUBAI, UAE",
           "date":"Since 2016",
@@ -266,7 +266,7 @@
         },
         {
           "id":14,
-          "category":"hotel",
+          "category":"Hotels",
           "client": "SHAZA HOTEL",
           "location": "RIYADH, KSA",
           "date":"2016",
@@ -283,7 +283,7 @@
         },
         {
           "id":15,
-          "category":"hotel",
+          "category":"Hotels",
           "client": "FULI LAI",
           "location": "DUBAI, UAE",
           "date":"2019",
@@ -298,6 +298,29 @@
             "/images/project15-7.jpg",
             "/images/project15-8.jpg",
             "/images/project15-9.jpg"
+          ]
+        },
+        {
+          "id":15,
+          "category":"Artworks",
+          "client": "Art Works",
+          "location": "Iran",
+          "date":"2020",
+          "size": "",
+          "photos": [
+            "/images/art (1).jpg",
+            "/images/art (2).jpg",
+            "/images/art (3).jpg",
+            "/images/art (4).jpg",
+            "/images/art (5).jpg",
+            "/images/art (6).jpg",
+            "/images/art (7).jpg",
+            "/images/art (8).jpg",
+            "/images/art (9).jpg",
+            "/images/art (10).jpg",
+            "/images/art (11).jpg",
+            "/images/art (12).jpg",
+            "/images/art (13).jpg"
           ]
         }
       ]
