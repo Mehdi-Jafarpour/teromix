@@ -360,14 +360,12 @@
           "description": "Plexiglas laminated MDF combines the strength of Medium Density Fiberboard with a sleek, high-gloss Plexiglas finish. It is durable, scratch-resistant, and ideal for modern furniture, cabinets, and interior panels.",
           "material": "MDF & Plexiglas",
           "photos":[
-            "/images/plexi1.jpg",
-            "/images/plexi2.jpg",
-            "/images/plexi3.jpg",
-            "/images/plexi4.jpg",
+            
             "/images/plexi5.jpg",
             "/images/plexi6.jpg",
             "/images/plexi7.jpg",
             "/images/plexi8.jpg"
+            
           ]
         },
         {
