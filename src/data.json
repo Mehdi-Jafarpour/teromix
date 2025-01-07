@@ -362,7 +362,12 @@
           "photos":[
             "/images/plexi1.jpg",
             "/images/plexi2.jpg",
-            "/images/plexi3.jpg"
+            "/images/plexi3.jpg",
+            "/images/plexi4.jpg",
+            "/images/plexi5.jpg",
+            "/images/plexi6.jpg",
+            "/images/plexi7.jpg",
+            "/images/plexi8.jpg"
           ]
         },
         {
@@ -371,23 +376,9 @@
           "material": "Natural Oak Veneer",
           "photos":[
             "/images/doors1.jpg",
-            "/images/doors2.jpg"
-          ]
-        },
-        {
-          "name": "Doors and Special Millworks ",
-          "description": "Security Doors Component",
-          "material": "Natural Veneer",
-          "photos":[
+            "/images/doors2.jpg",
             "/images/doors3.jpg",
-            "/images/doors4.jpg"
-          ]
-        },
-        {
-          "name": "Doors and Special Millworks ",
-          "description": "Security Doors Component",
-          "material": "Natural Walnut Veneer",
-          "photos":[
+            "/images/doors4.jpg",
             "/images/doors5.jpg",
             "/images/doors6.jpg"
           ]
@@ -404,7 +395,7 @@
         },
         {
           "name": "Veneers ",
-          "description": "Coating Materials",
+          "description": "Natural Wood",
           "material": "Natural Veneer",
           "link": "./images/pdf-files/Natural-Veneer.pdf",
           "photos":[
@@ -416,7 +407,7 @@
         },
         {
           "name": "Veneers ",
-          "description": "Coating Materials",
+          "description": "Artificial Wood",
           "material": "Processed Veneer",
           "link": "./images/pdf-files/Processed-Veneer.pdf",
           "photos":[
