@@ -322,6 +322,32 @@
             "/images/art (12).jpg",
             "/images/art (13).jpg"
           ]
+        },
+        {
+          "id":15,
+          "category":"Wooden House",
+          "client": "Individual Client",
+          "location": "Iran",
+          "date":"2020",
+          "size": "160 Sq.m",
+          "photos": [
+            "/images/project16-1.jpg",
+            "/images/project16-2.jpg",
+            "/images/project16-3.jpg",
+            "/images/project16-4.jpg",
+            "/images/project16-5.jpg",
+            "/images/project16-6.jpg",
+            "/images/project16-7.jpg",
+            "/images/project16-8.jpg",
+            "/images/project16-9.jpg",
+            "/images/project16-10.jpg",
+            "/images/project16-11.jpg",
+            "/images/project16-12.jpg",
+            "/images/project16-13.jpg",
+            "/images/project16-14.jpg",
+            "/images/project16-15.jpg",
+            "/images/project16-16.jpg"
+          ]
         }
       ]
     },
