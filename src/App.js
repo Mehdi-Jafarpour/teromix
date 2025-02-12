@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
+import Artwork from './components/Artwork';
 import Projects from './components/Projects';
 import Services from './components/Services';
 import Contact from './components/Contact';
@@ -35,6 +36,7 @@ function Main() {
         <Route path="/partners" element={<Partners />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/artwork" element={<Artwork />} />
       </Routes>
       {location.pathname !== '/' && <Footer />}
     </>

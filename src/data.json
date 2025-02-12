@@ -302,29 +302,6 @@
         },
         {
           "id":15,
-          "category":"Artworks",
-          "client": "Art Works",
-          "location": "Iran",
-          "date":"2020",
-          "size": "",
-          "photos": [
-            "/images/art (1).jpg",
-            "/images/art (2).jpg",
-            "/images/art (3).jpg",
-            "/images/art (4).jpg",
-            "/images/art (5).jpg",
-            "/images/art (6).jpg",
-            "/images/art (7).jpg",
-            "/images/art (8).jpg",
-            "/images/art (9).jpg",
-            "/images/art (10).jpg",
-            "/images/art (11).jpg",
-            "/images/art (12).jpg",
-            "/images/art (13).jpg"
-          ]
-        },
-        {
-          "id":15,
           "category":"Wooden House",
           "client": "Individual Client",
           "location": "Iran",
@@ -443,6 +420,45 @@
         }
         
       ]
+    },
+
+    "artwork" :{
+      "title": "Artwork and Signage",
+      "background": "/images/art-header.jpg",
+      "metalArt" : {
+        "title":"Industrial Artistry - The Fusion of Metal and Innovation",
+        "des": "Our partner company specializes in creating breathtaking sculptures and artworks from repurposed metal and mechanical components. Their work blends creativity with industrial craftsmanship, transforming gears, pipes, and scrap metal into stunning artistic pieces. Using advanced welding techniques, cutting, and intricate assembly, they craft sculptures that showcase the raw beauty of metal while integrating lighting and mechanical elements for a futuristic, cyberpunk aesthetic. Their artworks stand as a testament to precision, imagination, and sustainable artistry, turning discarded materials into mesmerizing masterpieces.",
+        "photos": [
+            "/images/art (1).jpg",
+            "/images/art (2).jpg",
+            "/images/art (3).jpg",
+            "/images/art (4).jpg",
+            "/images/art (5).jpg",
+            "/images/art (6).jpg",
+            "/images/art (7).jpg",
+            "/images/art (8).jpg",
+            "/images/art (9).jpg",
+            "/images/art (10).jpg",
+            "/images/art (11).jpg",
+            "/images/art (12).jpg",
+            "/images/art (13).jpg"
+        ]
+        
+      },
+      "signage": {
+        "title": "Bespoke Signage Solutions by Teromix - Where Art Meets Functionality",
+        "des": "At Teromix, we specialize in crafting high-quality, custom signage for both interior and exterior use in hotels, restaurants, and commercial spaces. Our designs seamlessly blend wood, metal, glass, and integrated lighting to create visually striking and durable signs that enhance brand identity and ambiance. For interior signage, we focus on elegance and sophistication, using finely crafted wood panels, etched glass, and LED backlighting to create a warm and inviting atmosphere. For outdoor signage, we prioritize durability and visibility, incorporating weather-resistant metals, reinforced glass, and illuminated features to ensure long-lasting, eye-catching displays that withstand the elements. Whether it's a sleek modern design or a rustic handcrafted look, our expert craftsmanship ensures that every sign reflects the unique personality of your business while maintaining functionality and longevity. Let Teromix bring your brand to life with signage that speaks volumes!",
+        "photos": [
+            "/images/sign (1).jpg",
+            "/images/sign (2).jpg",
+            "/images/sign (3).jpg",
+            "/images/sign (4).jpg",
+            "/images/sign (5).jpg",
+            "/images/sign (6).jpg",
+            "/images/sign (7).jpg",
+            "/images/sign (8).jpg"
+        ]
+      }
     }
   }
   

@@ -37,7 +37,7 @@ function Services() {
             {servicetData.cards?.map((card, index) => (
               <Link 
                 key={index} 
-                to="/projects" 
+                to={card.title === "ART WORKS" ? "/artwork" : "/projects"}
                 className="bg-black text-white overflow-hidden" 
                 style={{ width: '250px', height: '520px' }}
               >
